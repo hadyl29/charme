@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page de Paiement</title>
+  <style>
+  .filter {
+  margin-bottom: 10px;
+}
+.container .contrenais-left{
+    width: 320px;
+    height: 1600px;
+    margin-left: 50px;
+    background: linear-gradient(135deg, #ffffff1a, #ffffff00  );
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid #ffffff2e ;
+    box-shadow: 0 8px 32px 0 #0000005e;
+}
+
+.container .contrenais-left h1{
+    font-size: 26px;
+    color: #707070;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.container .contrenais-left h3{
+    margin-top: 30px;
+    padding-left: 15px;
+    border-top: solid 1px #707070;
+    border-bottom: solid 1px #707070;
+    font-size: 24px;
+    font-family: monospace;
+}
+.container .contrenais-left .forme .type{
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.container .contrenais-left .forme .type .holy {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.container .contrenais-left .forme .type a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    font-family: monospace;
+}
+.container .contrenais-left .forme .type a:hover{
+    color: #1c6fdb;
+    font-size: 15px;
+}
+
+.container .contrenais-left .forme .prix{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.container .contrenais-left .forme .prix input{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.container .contrenais-left .forme .proc a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    font-family: monospace;
+}
+
+
+.container .contrenais-left .forme .proc{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.container .contrenais-left .forme .proc input{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.container .contrenais-left .forme .proc a:hover{
+    color: #1c6fdb;
+    font-size: 15px;
+}
+
+label{
+    font-family: fantasy;
+    font-size: 28px;
+}
+
+  </style>
+</head>
+<body>
+    <div class="contrenais-left">
+        <h1>GAMING PC</h1>
+        <hr>
+        <h3>Filtrer Par</h3>
+        <div class="forme" > 
+            <div class="type">
+                <label >Type De PC</label><br>
+                    <input type="checkbox" class="holy" > <a href="">Full setup </a><br>
+                    <input type="checkbox" class="holy" > <a href="">Unité seulement</a><br>
+            </div>  
+            <div class="prix">  
+                <label>Prix</label><br>
+                0dt<input type="range" class="range">7000dt
+            </div>
+            <div class="proc">
+                <label>PROCESSEUR</label><br>
+                    <input type="checkbox" class="holy" > <a href="">AMD Ryzen 3 3200G</a><br>
+                    <input type="checkbox" class="holy" > <a href="">AMD Ryzen 5 3600</a><br>
+                    <input type="checkbox" class="holy" > <a href="">Intel Core i3-12600F </a><br>
+                    <input type="checkbox" class="holy" > <a href="">Intel Core i3-13700F</a><br>
+                    <input type="checkbox" class="holy" > <a href="">Intel Core i5-12600F </a><br>
+                    <input type="checkbox" class="holy" > <a href="">Intel Core i5-13700F</a><br>
+                    <input type="checkbox" class="holy" > <a href="">Intel Core i7-12600F </a><br>
+                    <input type="checkbox" class="holy" > <a href="">Intel Core i7-13700F</a><br>
+            </div>
+            <div class="proc">
+                <label>CARTE GRAPHIQUE</label><br>
+                    <input type="checkbox" class="holy" > <a href="">GeForce GTX 1660 Ti</a><br>
+                    <input type="checkbox" class="holy" > <a href="">GeForce RTX 4060</a><br>
+                    <input type="checkbox" class="holy" > <a href="">GeForce RTX 4060 Ti</a><br>
+                    <input type="checkbox" class="holy" > <a href="">GeForce® RTX 3050</a><br>
+                    <input type="checkbox" class="holy" > <a href="">GeForce® RTX 3060</a><br>
+                    <input type="checkbox" class="holy" > <a href="">GeForce® RTX 4070 Ti</a><br>
+                    <input type="checkbox" class="holy" > <a href="">NVIDIA GeForce® GTX 1660 Ti</a><br>
+            </div>
+            <div class="proc">
+                <label>RAM</label><br>
+                    <input type="checkbox" class="holy" > <a href="">8 Go</a><br>
+                    <input type="checkbox" class="holy" > <a href="">16 Go</a><br>
+                    <input type="checkbox" class="holy" > <a href="">32 Go</a><br>
+            </div>
+            <div class="proc">
+                <label>Stockage SSD</label><br>
+                    <input type="checkbox" class="holy" > <a href="">+1To</a><br>
+                    <input type="checkbox" class="holy" > <a href="">240 - 256 GB</a><br>
+                    <input type="checkbox" class="holy" > <a href="">480 - 512 GB</a><br>
+                    <input type="checkbox" class="holy" > <a href="">960 GB - 1TO</a><br>
+            </div>
+            <div class="proc">
+                <label>Disponibilité</label><br>
+                    <input type="checkbox" class="holy" > <a href="">En stock</a><br>
+                    <input type="checkbox" class="holy" > <a href="">Non disponible</a><br>
+            </div>
+        </div>
+    </div>   
+
+
+
+ 
+  
+</body>
+</html>
+

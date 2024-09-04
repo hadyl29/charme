@@ -1,0 +1,333 @@
+<html>
+    !DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title></title>
+	<style type="text/css">
+   
+
+   html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+.slider-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    height:430px;
+    overflow: hidden;
+}
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50px;
+    margin: 0 0.2em 0;
+}
+.menu label:hover,.menu label:focus {
+    background: black;
+}
+.slide-input{
+    opacity: 0;
+}
+.slide-img {
+    width: 100%;
+    height:90%;
+    position: absolute;
+    object-fit: cover;
+    object-position:center;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
+.swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .shop-swiper .swiper-wrapper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+  }
+  .shop .swiper-slide .box{
+    text-align: center;
+
+  }
+   .shop .swiper-slide img {
+    padding: 1rem .2rem 2rem;
+    background-color: #fff ;
+    position: relative;
+  }
+  .shop  .image img{
+    width: 300px;
+    height: 300px;
+    padding: 1,2rem;
+    margin: auto;
+  }
+  .shop .swiper-slide .add{
+    position: relative;  
+    bottom: -0;
+    top: -70px;
+    left:3px;
+    background-color: #FFCCCC;
+    color: #fff;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .shop .swiper-slide .add .lnr{
+    padding: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .shop .swiper-slide .info{
+padding: 0rem 1rem 1rem;
+z-index: 1;
+transition: all .4s ease-in-out;
+position: relative;
+top: -80px;
+
+  }
+  .shop .swiper-slide .info p{
+  color: black;  
+  font-size: 1.1rem;
+}  
+.shop .swiper-slide .info h4{
+   font-weight: 300;
+  }  
+  .shop .swiper-slide .info h4{
+   color:#777 ;
+   font-size: 1rem;
+   }  
+   .shop .swiper-slide:hover .add{
+    opacity: 1;
+    visibility: visible;
+    bottom: -1rem;
+   }
+   .shop .swiper-slide .add .lnr:hover{
+    color: #FFCCCC ;
+    background: #fff;
+   }
+   .shop .swiper-slide:hover .info{
+    box-shadow: 0 2px 40px 8px rgba(15, 15n, 15, 15);
+    background: #fff;
+    top: 0;
+   }
+   .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px; /* ajustez la largeur selon vos besoins */
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: black;
+}
+
+.ou {
+  margin: 0 10px; /* espace autour du mot "OU" */
+}
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.color-circles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.color-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #ccc;
+  color: #333;
+}
+
+.filter-btn:hover {
+  background-color: #ddd;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 33.33%;
+  padding: 5px;
+}
+
+.product img {
+  width: 100%;
+  display: block;
+}
+
+.product h3 {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.hide {
+  display: none;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <p>  À propos de Charme</p>
+  Trouver LE soin de beauté nécessite toujours quelques recherches.
+   Chez Charme, nous vous proposons les meilleurs produits ainsi qu'un accompagnement professionnel, et ce afin que vous trouviez
+    les articles qui vous conviennent le mieux. De la recherche du fond de teint idéal à celle d'un fard à paupières qui éclairera
+     votre regard en toutes circonstances, nous l'avons.
+
+  Le moment est venu de vous écouter, de prendre soin de votre peau et de préserver ce que vous 
+  avez de plus riche : votre beauté naturelle. On commence ? N'hésitez pas à parcourir notre collection.
+
+
+  <div class="container">
+    <div class="line"></div>
+    <div class="ou">OU</div>
+    <div class="line"></div>
+  </div>
+  
+
+        <div class="slider-container">
+            <div class="menu">
+                <label for="slide-dot-1"></label>
+                <label for="slide-dot-2"></label>
+                <label for="slide-dot-3"></label>
+            </div>
+
+            <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+            <img class="slide-img" src="img1.jpg">
+
+            <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+            <img class="slide-img" src="img2.avif">
+
+            <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+            <img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide3.jpg">
+
+        </div>
+
+        <div class="gallery">
+          <div class="filter-buttons">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="lipstick">Lipstick</button>
+            <button class="filter-btn" data-filter="eyeshadow">Eyeshadow</button>
+            <button class="filter-btn" data-filter="foundation">Foundation</button>
+          </div>
+          <div class="products">
+            <div class="product lipstick">
+              <img src="lipstick.jpg" alt="Lipstick">
+              <h3>Lipstick</h3>
+            </div>
+            <div class="product eyeshadow">
+              <img src="eyeshadow.jpg" alt="Eyeshadow">
+              <h3>Eyeshadow</h3>
+            </div>
+            <div class="product foundation">
+              <img src="foundation.jpg" alt="Foundation">
+              <h3>Foundation</h3>
+            </div>
+          </div>
+        </div>  
+        
+    </body>
+</html>
+
+</html>

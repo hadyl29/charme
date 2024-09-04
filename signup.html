@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+    body{
+      margin: 0;
+    padding: 0;
+    font-family: 'dancing script',cursive;
+    font-family: 'league spartan',sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+    background-color: #f4f4f4;
+                 
+		}
+::-webkit-scrollbar{
+    height: .5rem;
+    width: .5rem;
+}
+::-webkit-scrollbar-track{
+    background: #fff;
+}
+::-webkit-scrollbar-thumb{
+    background: #FFCCCC;
+}
+nav{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    width:100%;
+    height:78px;
+}
+.logo img{
+    background-color:black ;
+     height: 70px;
+     width: 280PX;
+     margin-top: 15px;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:70px;
+}
+nav .navlist{
+    display: flex;
+}
+
+nav .navlist .onli{
+    text-transform:uppercase;
+    font-size: .9.3rem;
+    cursor: pointer;
+    z-index: 111;
+    }
+    nav .navlist .onli .here{
+        color: #fff;
+        padding: 2rem;
+        position: relative;
+        left: 200px;
+        top: 3px;
+    }
+    
+    ul .onli ul.dropdown li a {
+        color: #000000;
+        font-size: 20px;
+        padding-left: 45px;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-right:40px;
+        
+
+    }
+    
+    ul .onli ul.dropdown li:hover a{
+        color: #ffcccc;
+        background: black;
+        
+    }
+    
+    ul .onli ul.dropdown li{
+      display: block;
+      text-transform: none;  
+      z-index: 999;
+    
+    }
+    ul .onli ul.dropdown{
+    width: 125px;
+    height: 110px;
+    background: #FFCCCC;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    margin-left: 200px;
+    margin-top: 30px;
+    }
+    ul .onli:hover ul.dropdown{
+        display: block;
+        
+    }
+    .navlist .onli .here::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:#FFCCCC;
+    height: 0%;
+    width: 100%;
+    border-bottom:.2rem solid #fff;
+    z-index: -1;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+    visibility: hidden; 
+    }
+    .navlist .onli .here:hover::before,
+    .active::before{ 
+        height: 100%;
+        opacity: 1;
+        visibility:visible;
+     }
+ .menu-btn .lnr{
+    font-size: 1.1rem;
+ }
+ .nav-icons{
+    display: flex;
+    gap: 2rem;
+ }
+ .nav-icons .lnr{
+    font-size: 1.1rem;
+cursor: pointer;
+padding: 20px;
+position: relative;
+left: 500px;
+top: 3px;
+ }
+ .nav-icons .lnr:hover{
+    color: #FFCCCC;
+ }
+
+		.signup-form  .H2{
+      font-size: 36px;
+    text-align: center;
+    font-family: 'dancing script',cursive;
+
+		}
+	.form-container {
+    display: flex;
+justify-content: space-between;
+background-image:url( back.jpg);
+background-repeat: no-repeat;
+background-size:100%;
+height: 736px;
+width: 100%;
+align-items: center;
+color: white;
+min-height: 100vh;
+
+}
+.signup-form input{
+    height:40px;
+    width: 40%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 30px;
+    color: white;
+    text-transform:lowercase;
+    padding-left: 20px;
+    position: relative;
+    right: 150px;
+}
+input::placeholder {
+    color: white;
+}
+
+.checkbox{
+   padding: 0px;
+	width: 30px;
+  margin: 0;
+  color: white;
+
+}
+input .checkbox1{
+	width:30px;
+	padding: 0px;
+  margin: 0;
+  position: relative;
+ 
+
+}
+label{
+position: relative;
+right: 140px;
+color: #fff;
+}
+ .checkbox{
+  position: relative;
+  left: 100px;
+}
+.remember-forget {
+   
+    font-size: 14.5px;
+    position: relative;
+    left: 100px;
+}
+.remember-forget input{
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 29px;
+}
+.remember-forget .checkbox1{
+  width: 10px;
+  height: 10px;
+  position: absolute;
+bottom: 5px;
+}
+.remember-forget label{
+  position: relative;
+  left: 10px;
+  bottom: 5px;
+}
+
+ .b1{
+      position: relative;
+      bottom: 20px;
+          margin-left: 200px;
+          width: 230px;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #AD042F;
+    font-weight: 600;
+        }
+
+    .signup-form{
+    width: 700px;
+    height: 600px;
+    background-color:transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: white;
+    font-family: 'league spartan',sans-serif;
+    border-radius:10px;
+    padding: 10px 30px;
+    position: relative;
+    left: 400px;
+}
+footer{
+background-color: black;
+color: white;
+text-align: center;
+padding: 20px 0;
+}
+.container10{
+text-align: center;
+width: 100%;
+}
+      
+         
+	</style>
+</head>
+<body>
+  <nav>
+    <div class="container nav-container">
+         <div class="logo"><a href="charme.html"><img src="charme.svg" ></a></div>
+        <ul class="navlist">
+            <li class="onli"><a class="here" href="charme.html" class="active">ACCEUIL</a></li>
+            <li class="onli"><a class="here" href="a propos.html">A PROPOS</a></li>
+            <li class="onli"><a class="here" href="#">PRODUIT</a>
+                <ul class="dropdown">
+                  <li><a href="teint.html">Teint</a></li>
+                  <li><a href="levre.html">Lévre</a></li>
+                  <li><a href="yeux.html">Yeux</a></li>
+                </ul>
+            </li>
+            <li class="onli"><a  class="here" href="#Contact">CONTACT</a></li>
+        </ul>
+        <div class="nav-icons">
+            <div class="menu-btn">
+              <a href="connectez-vous.html"> <span class="lnr lnr-user"></span></a>
+              <span class="lnr lnr-heart"></span>
+              <span class="lnr lnr-cart"></span>
+            </div>
+
+        </div>
+    </div>
+</nav> 
+
+	<div class="form-container">
+<form action="#" method="post" class="signup-form"> <pre>
+			<h1 class="H2">Je Crée Mon Compte</h1>
+      <div class="remember-forget"> <label >
+      <input  type="checkbox" class="checkbox">Madame <input  class="checkbox1" type="checkbox" >  Monsieur</label> </div>
+			<input type="text" placeholder="votre prénom*" >  <input type="text" placeholder="votre nom*" >
+
+			<input type="email" placeholder="votre e-mail">  <input type="email" placeholder="Confirmer votre e-mail*">
+      
+			<input type="pasword" placeholder="votre mot de passe*">  <input type="pasword" placeholder="Confirmer votre mot de passe">
+
+			<input type="number" placeholder="Votre téléphone">
+
+			<label>DATE DE NAISSANCE</label>
+
+			<input type="date" required>
+
+			<button type="submit" class="b1">Je Crée Mon Compte</button>
+		</form></pre></div>
+		
+    <footer>
+      <div class="container10">
+        <p>&copy; 2024 . created by hadil hasnaoui &hearts; .</p>
+      </div>
+    </footer> 
+</body>
+</html>
